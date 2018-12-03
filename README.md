@@ -139,7 +139,7 @@ getChainID(callback, chainType)
 ```
 ```javascript
 typeof callback === 'function' // 用户点击确认按钮的时候执行这个 callback
-typeof chainType === 'string' // 需要请求的 客户端的对应 chainType
+typeof chainType === 'int' // 需要请求的 客户端的对应 chainType
 ```
 _example_
 ```javascript
@@ -175,7 +175,7 @@ _example_
     var symbol = "EOS"
     getBalance(
      function(result) {
-      // 返回 result 是 Doble 类型的 余额
+      // 返回 result 是 Double 类型的 余额
       // result - 1.2893
      }, 
      contract,
