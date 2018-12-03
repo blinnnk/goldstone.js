@@ -78,7 +78,7 @@ _example_
     var encryptData = "VZMMO6dRLNFvtwQ="
     decrypt(
      function(result) {
-	  // result - Hello World
+	    // result - Hello World
       // result 是解密好后的内容, 通过 callback 返回供使用
      }, 
      encryptData
@@ -106,7 +106,7 @@ _example_
   })
 ```
 
-### getSignHeader
+### getAccountAddress
 ```javascript
 getAccountAddress(callback, contract, symbol, isEOSAccountName)
 ```
