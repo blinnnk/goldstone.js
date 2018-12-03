@@ -203,7 +203,7 @@ _example_
     var data = 
 	    {
 		    "actor": "kaysaith5leo",
-		    "permission": "actor",
+		    "permission": "active",
 		    "code": "wuxianyinli3",
 		    "method": "reportgsid",
 		    "chainID": "e70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473",
