@@ -155,6 +155,33 @@ _example_
   })
 ```
 
+### getLanguageCode
+```javascript
+getLanguageCode(callback)
+```
+```javascript
+typeof callback === 'function' // 用户点击确认按钮的时候执行这个 callback
+```
+_example_
+```javascript
+  document.getElementById('button').addEventListener('click', function() {
+    getLanguageCode(
+     function(result) {
+      // 返回 result 是对应的当前客户端正在使用的 Language Code
+      // result - 0
+     }
+    )
+  })	
+```
+```kotlin
+English(0, "English", "EN"),
+Chinese(1, "简体中文", "ZH"),
+Japanese(2, "日本語", "JA"),
+Russian(3, "Русский язык", "RU"),
+Korean(4, "한국어", "KO"),
+TraditionalChinese(5, "繁體中文", "TC");  
+```
+
 ## Network Tool
 
 常用的网络请求数据, 提供对应的方法
