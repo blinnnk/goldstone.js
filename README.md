@@ -39,6 +39,103 @@ document.getElementById('button').addEventListener('click', function() {
   })
 ```
 
+### getLanguageCode
+```javascript
+getLanguageCode(callback)
+```
+```javascript
+typeof callback === 'function' // 用户点击确认按钮的时候执行这个 callback
+```
+_example_
+```javascript
+  document.getElementById('button').addEventListener('click', function() {
+    getLanguageCode(
+     function(result) {
+      // 返回 result 是对应的当前客户端正在使用的 Language Code
+      // result - 0
+     }
+    )
+  })
+```
+```kotlin
+English(0, "English", "EN"),
+Chinese(1, "简体中文", "ZH"),
+Japanese(2, "日本語", "JA"),
+Russian(3, "Русский язык", "RU"),
+Korean(4, "한국어", "KO"),
+TraditionalChinese(5, "繁體中文", "TC");
+```
+
+### getVersionName
+```javascript
+getVersionName(callback)
+```
+```javascript
+typeof callback === 'function' // 用户点击确认按钮的时候执行这个 callback
+```
+_example_
+```javascript
+  document.getElementById('button').addEventListener('click', function() {
+    getVersionName(
+     function(result) {
+      // 返回 result 是对应的当前客户端正在使用的 Version Name
+      // result - 1.6.3
+     }
+    )
+  })
+```
+
+### getEOSAccountPermissions
+```javascript
+getEOSAccountPermissions(callback)
+```
+```javascript
+typeof callback === 'function' // 用户点击确认按钮的时候执行这个 callback
+```
+_example_
+```javascript
+  document.getElementById('button').addEventListener('click', function() {
+    getEOSAccountPermissions(
+     function(result) {
+      // 返回 result 是对应的当前客户端正在使用的 EOSAccount 的 Permission Model
+      // result -
+      "permissions": [
+          {
+            "perm_name": "active",
+            "parent": "owner",
+            "required_auth": {
+              "threshold": 1,
+              "keys": [
+                {
+                  "key": "EOS73yQdGHJ3KJrzBLvspJseRj4F8xqF7r3dMqbQU4KGKUe5KpLA4",
+                  "weight": 1
+                }
+              ],
+              "accounts": [],
+              "waits": []
+            }
+          },
+          {
+            "perm_name": "owner",
+            "parent": "",
+            "required_auth": {
+              "threshold": 1,
+              "keys": [
+                {
+                  "key": "EOS73yQdGHJ3KJrzBLvspJseRj4F8xqF7r3dMqbQU4KGKUe5KpLA4",
+                  "weight": 1
+                }
+              ],
+              "accounts": [],
+              "waits": []
+            }
+          }
+        ]
+     }
+    )
+  })
+```
+
 ## Tools
 
 APP 提供的工具, 其中包括特有的和公共的.
