@@ -1,13 +1,12 @@
-eval(function(d, e, a, c, b, f) {
-  b = function(a) {return (a < e ? '' : b(parseInt(a / e))) + (35 < (a %= e) ? String.fromCharCode(a + 29) : a.toString(36))}
+eval(function(p, a, c, k, e, r) {
+  e = function(c) {return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))}
   if (!''.replace(/^/, String)) {
-    for (; a--;) f[b(a)] = c[a] || b(a)
-    c = [function(a) {return f[a]}]
-    b = function() {return '\\w+'}
-    a = 1
+    while (c--) r[e(c)] = k[c] || e(c)
+    k = [function(e) {return r[e]}]
+    e = function() {return '\\w+'}
+    c = 1
   }
-  for (; a--;) c[a] && (d = d.replace(new RegExp('\\b' + b(a) + '\\b', 'g'), c[a]))
-  return d
-}('8 1={g:\'e\',6:\'10\',y:\'V\',G:\'S\'}8 X={O:q(U),Y:q(0),11:q(2)}8 L={P:\'Q\',J:\'T\'}e q(a){4(3 a===1.y)u a 5 u j}e D(a){f.h.D(a)}8 t e R(a,b,c){4(a===L.J){t()t=7 u}4((3 b!==1.6||3 c!==1.6||3 a!==1.g)){A(\'W N v Z\')}5{t=a f.h.A(b,c)}}8 p e I(a,b){4(b!==j&&q(b)===j){a(\'9 12 13\')}5{4(3 a===1.g){p=a f.h.I(b)}5 4(3 a===1.6){p(a)p=7}5{p(\'9 i\')p=7}}}8 k e F(a){4(3 a===1.g){k=a f.h.F()}5 4(3 a===1.6){k(a)k=7}5{k(\'9 i\')k=7}}8 m e z(a,b,c,d){4((b===j||c===j||3 d!==1.G)&&3 a!==1.6){a(\'9 B v C\')}5{4(3 a===1.g){m=a f.h.z(b,c,d)}5 4(3 a===1.6){m(a)m=7}5{m(\'9 i\')m=7}}}8 n e E(a,b,c){4((b===j||c===j)&&3 a!==1.6){a(\'9 B v C\')}5{4(3 a===1.g){n=a f.h.E(b,c)}5 4(3 a===1.6){n(w(a))n=7}5{n(\'9 i\')n=7}}}8 o e H(a,b){4(3 a===1.g){4(3 b===1.6){o=a f.h.H(b)}5 a(\'9 i x\')}5 4(3 a===1.6){o(w(a))o=7}5{o(\'9 i\')o=7}}8 l e K(a,b){4(3 a===1.g){4(3 b===1.6){l=a f.h.K(b)}5 a(\'9 i x\')}5 4(3 a===1.6){l(a)l=7}5{l(\'9 i\')l=7}}8 s e M(a){4(3 a===1.g){s=a f.h.M()}4(3 a===1.6){s(a)s=7}}8 r e 14(a,b){4(3 a===1.g){4(3 b===1.6){r=a f.h.15(b)}5 a(\'9 i x\')}4(3 a===1.6){8 c=w(a)r(c)r=7}}8 16',
-  62, 69, ' Tag  typeof if else String null var wrong     function window Function control request undefined getLanguageCodeCallback decryptCallback getAccountAddressCallback getBalanceCallback encryptCallback getChainIDCallback chainType signedDataCallback signHeaderCallback confirmEventCallback return of decodeURIComponent message Int getAccountAddress alert parameters requesting toastMessage getBalance getLanguageCode Boolean encrypt getChainID ConfirmEvent decrypt CustomizedCommand getSignHeader Parameters EOS FinishedBackEvent finished showAlert boolean clickedConfirmButton 194 number Wrong ChainType BTC Requesting string LTC chain type getEOSSignedData getEOSSingedData backEvent'.split(' '),
-  0, {}))
+
+  while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c])
+  return p
+}('7 1={8:"5",4:"S",E:"P",B:"W"},Z={11:l(N),O:l(0),R:l(2)},H={T:"U",L:"Y"};5 l(a){10(3 a===1.E)14 a}5 G(a){9.e.G(a)}7 q;5 Q(a,b,c){a===H.L?(q(),q=f):3 b!==1.4||3 c!==1.4||3 a!==1.8?J("1a V v X"):(q=a,9.e.J(b,c))}7 k;5 x(a,b){h 0!==b&&h 0===l(b)?a("6 12 13"):3 a===1.8?(k=a,9.e.x(b)):(3 a===1.4?k(a):k("6 g"),k=f)}7 o;5 y(a){3 a===1.8?(o=a,9.e.y()):(3 a===1.4?o(a):o("6 g"),o=f)}7 p;5 D(a){3 a===1.8?(p=a,9.e.D()):(3 a===1.4?p(a):p("6 g"),p=f)}7 n;5 M(a,b,c,d){h 0!==b&&h 0!==c&&3 d===1.B||3 a===1.4?3 a===1.8?(n=a,9.e.M(b,c,d)):(3 a===1.4?n(a):n("6 g"),n=f):a("6 z v A")}7 m;5 C(a,b,c){h 0!==b&&h 0!==c||3 a===1.4?3 a===1.8?(m=a,9.e.C(b,c)):(3 a===1.4?m(t(a)):m("6 g"),m=f):a("6 z v A")}7 j;5 F(a,b){3 a===1.8?3 b===1.4?(j=a,9.e.F(b)):a("6 g w"):(3 a===1.4?j(t(a)):j("6 g"),j=f)}7 i;5 I(a,b){3 a===1.8?3 b===1.4?(i=a,9.e.I(b)):a("6 g w"):(3 a===1.4?i(a):i("6 g"),i=f)}7 s;5 K(a){3 a===1.8&&(s=a,9.e.K());3 a===1.4&&(s(a),s=f)}7 r;5 15(a,b){3 a===1.8&&(3 b===1.4?(r=a,9.e.16(b)):a("6 g w"));3 a===1.4&&(a=t(a),r(a),r=f)}7 u;5 18(a){3 a===1.8&&(u=a,9.e.19());3 a===1.4&&(a=t(a),u(a),u=f)}7 17;', 62, 73, '|Tag||typeof|String|function|wrong|var|Function|window|||||control|null|request|void|decryptCallback|encryptCallback|getChainIDCallback|chainType|getBalanceCallback|getAccountAddressCallback|getLanguageCodeCallback|getVersionNameCallback|confirmEventCallback|signedDataCallback|signHeaderCallback|decodeURIComponent|getPermissionsCallBack|of|message|getChainID|getLanguageCode|parameters|requesting|Boolean|getBalance|getVersionName|Int|encrypt|toastMessage|CustomizedCommand|decrypt|alert|getSignHeader|ConfirmEvent|getAccountAddress|194|BTC|number|showAlert|LTC|string|FinishedBackEvent|finished|Parameters|boolean|Requesting|clickedConfirmButton|ChainType|if|EOS|chain|type|return|getEOSSignedData|getEOSSingedData|backEvent|getPermissions|getEOSAccountPermissions|Wrong'.split('|'), 0, {}))
