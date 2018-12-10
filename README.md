@@ -99,7 +99,7 @@ _example_
      function(result) {
       // 返回 result 是对应的当前客户端正在使用的 EOSAccount 的 Permission Model
       // result -
-      "permissions": [
+        [
           {
             "perm_name": "active",
             "parent": "owner",
