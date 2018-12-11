@@ -185,20 +185,22 @@ _example_
 
 ### getSignHeader
 ```javascript
-getSignHeader(callback)
+getSignHeader(callback, timestamp)
 ```
 ```javascript
 typeof callback === 'function' // 用户点击确认按钮的时候执行这个 callback
+typeof timestamp === 'string' // 时间戳并转换为 string 格式
 ```
 _example_
 ```javascript
  document.getElementById('button').addEventListener('click', function() {
-    var encryptData = "VZMMO6dRLNFvtwQ="
+    var timestamp = new Date().getTime().toString()
     getSignHeader(
       function(result) {
         // 请求头用到的加密签名
         // 如果向 GoldStone 发起网络请求需要在请求头加入这个签名进行标记合法
-      }
+      },
+      timestamp
     )
   })
 ```
