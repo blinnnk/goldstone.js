@@ -79,7 +79,25 @@ _example_
     getVersionName(
      function(result) {
       // 返回 result 是对应的当前客户端正在使用的 Version Name
-      // result - 1.6.3
+      // result - 21
+     }
+    )
+  })
+```
+
+### getGoldStoneID
+```javascript
+getGoldStoneID(callback)
+```
+```javascript
+typeof callback === 'function' // 用户点击确认按钮的时候执行这个 callback
+```
+_example_
+```javascript
+  document.getElementById('button').addEventListener('click', function() {
+    getGoldStoneID(
+     function(result) {
+      // result - 989s8d989xy7d88s6ddf2
      }
     )
   })
