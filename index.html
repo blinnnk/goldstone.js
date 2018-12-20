@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <header>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1"/>
   <script src = "./gsmini.js"></script>
 </header>
 <body>
 Java-Javascript Interaction In Android
-<div id = "button">Hello</div>
-<h1 class = "test" style = "color: black; font-size: 24px">Hey</h1><br/>
 <br/>
 <input id = "input1" value = "hello world">
 <br/>
@@ -23,8 +22,10 @@ Java-Javascript Interaction In Android
 <button id = 'button10'>Get Permissions</button>
 <button id = 'button11'>Get Version</button>
 <button id = 'button12'>Get GoldStone ID</button>
+<button id = 'button13'>Share Content</button>
 
 <script type = "text/javascript">
+
   document.getElementById('button11').addEventListener('click', function() {
     getVersionName(function(result) {
       alert(result)
@@ -75,6 +76,11 @@ Java-Javascript Interaction In Android
     toastMessage(inputValue)
   })
 
+  document.getElementById('button13').addEventListener('click', function() {
+    var inputValue = document.getElementById('input1').value
+    showShareDashboard(inputValue)
+  })
+
   document.getElementById('button1').addEventListener('click', function() {
     var inputValue = document.getElementById('input1').value
     getChainID(function(result) {
@@ -104,8 +110,10 @@ Java-Javascript Interaction In Android
   })
 
   document.getElementById('button5').addEventListener('click', function() {
+    alert('hello 1')
     getEOSSignedData(function(result) {
-      alert(result)
+      alert('hello 2')
+      alert(result.signedData + result.error)
     }, '{"actor":"kaysaith5leo","permission":"actor","code":"wuxianyinli3","method":"reportgsid","chainID":"e70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473","data":"202d04fb751666383239616162393864393335373832"}')
   })
 
@@ -122,9 +130,9 @@ Java-Javascript Interaction In Android
   }
 
   input {
-    width: 80%;
-    height: 50px;
+    width: 90%;
     margin: 20px 0;
+    height: 50px;
     color: black;
     font-size: 18px;
   }

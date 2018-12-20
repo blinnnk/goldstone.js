@@ -16,6 +16,15 @@ toastMessage(message)
 typeof message === 'string'
 ```
 
+### ShareDashboard
+
+```javascript
+showShareDashboard(content)
+```
+```javascript
+typeof content === 'string'
+```
+
 ### showAlert
 
 ```javascript
@@ -328,15 +337,18 @@ _example_
 		}
     getEOSSignedData(
      function(result) {
-      // result 接收后, 前端自行发起 pushTransaction 的请求
-        {
-		    "signatures": [
-		        "SIG_K1_KAKqF9Tmhej8cCxp7d1Y9kDHzW9Wh5kxg46s647EmvmqeXbtsUUJQathTJ3hFMqzkRH8izDttsFP5whYGqbxhTZUCmVmfG"
-		    ],
-		    "packed_trx": "4901015c565284d053880000000001305c9cce4fe3bae600407298e54babba0140552c2d3b83bd8100000000a8ed32322d2c323032643034666237353136363633383332333936313631363233393338363433393333333533373338333200",
-		    "compression": "none",
-		    "packed_context_free_data": "00"
-		}
+      // result 接收后, 前端自行发起 pushTransaction 的请求, 以及 Error 信息
+       {
+         "signedData":  {
+                    		    "signatures": [
+                    		        "SIG_K1_KAKqF9Tmhej8cCxp7d1Y9kDHzW9Wh5kxg46s647EmvmqeXbtsUUJQathTJ3hFMqzkRH8izDttsFP5whYGqbxhTZUCmVmfG"
+                    		    ],
+                    		    "packed_trx": "4901015c565284d053880000000001305c9cce4fe3bae600407298e54babba0140552c2d3b83bd8100000000a8ed32322d2c323032643034666237353136363633383332333936313631363233393338363433393333333533373338333200",
+                    		    "compression": "none",
+                    		    "packed_context_free_data": "00"
+                    		},
+          "error": "Message"
+       }
      }, 
      data   )
   })
