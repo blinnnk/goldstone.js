@@ -112,9 +112,9 @@ _example_
   })
 ```
 
-### getEOSAccountPermissions
+### getPermissions
 ```javascript
-getEOSAccountPermissions(callback)
+getPermissions(callback)
 ```
 ```javascript
 typeof callback === 'function' // 用户点击确认按钮的时候执行这个 callback
@@ -122,7 +122,7 @@ typeof callback === 'function' // 用户点击确认按钮的时候执行这个 
 _example_
 ```javascript
   document.getElementById('button').addEventListener('click', function() {
-    getEOSAccountPermissions(
+    getPermissions(
      function(result) {
       // 返回 result 是对应的当前客户端正在使用的 EOSAccount 的 Permission Model
       // result -
