@@ -281,6 +281,38 @@ _example_
   })
 ```
 
+### getCurrentWalletType
+```javascript
+getCurrentWalletType(callback)
+```
+```javascript
+typeof callback === 'function' // 用户点击确认按钮的时候执行这个 callback
+```
+_example_
+```javascript
+  document.getElementById('button').addEventListener('click', function() {
+    getCurrentWalletType(
+     function(result) {
+      // 返回 result 是对应的当前客户端正在使用的 chainID
+      // result - e70xxx............
+     }
+    )
+  })
+```
+```javascript
+    const val btcOnly = "btcOnly"
+    const val ethSeries = "ethSeries"
+    const val btcTestOnly = "btctestOnly"
+    const val ltcOnly = "ltcOnly"
+    const val bchOnly = "bchOnly"
+    const val eosOnly = "eosOnly"
+    const val eosMainnetOnly = "eosMainnetOnly"
+    const val eosJungleOnly = "eosJungleOnly"
+    const val eosKylinOnly = "eosKylinOnly"
+    const val bip44MultiChain = "bip44MultiChain"
+    const val multiChain = "multiChain"
+```
+
 ## Network Tool
 
 常用的网络请求数据, 提供对应的方法
