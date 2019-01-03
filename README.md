@@ -293,8 +293,8 @@ _example_
   document.getElementById('button').addEventListener('click', function() {
     getCurrentWalletType(
      function(result) {
-      // 返回 result 是对应的当前客户端正在使用的 chainID
-      // result - e70xxx............
+      // 返回 result 是对应的当前客户端正在使用的 walletType
+      // result - "multiChain"
      }
     )
   })
